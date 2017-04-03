@@ -11,6 +11,6 @@ defined class C
 scala> val a = A(B(C(4)))
 a: A = A(B(C(4)))
 
-scala> val a2 = a but ( _.b.c.i <~ 8 )
+scala> val a2 = a but { _.b.c.i <~ 8 }
 a2: A = A(B(C(8)))
 ```
